@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDealsActivity" android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Restaurant Deals "
+        android:background="@color/colorOrange"
+        android:gravity="center"
+
+        android:textColor="@color/colorPurple"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/editTextMenuRID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Restaurant ID " />
+
+    <EditText
+        android:id="@+id/editTextMenuCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Category " />
+
+    <EditText
+        android:id="@+id/editTextMenuTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Title " />
+
+    <EditText
+        android:id="@+id/editTextMenuPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Price in integer"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonMenuChooseFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Image"
+        android:background="@color/colorLime"
+        />
+    <Button
+        android:id="@+id/buttonMenuUploadFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save and upload"
+        android:background="@color/colorOrange"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewMenu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_below="@+id/buttonMenuUploadFile"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>

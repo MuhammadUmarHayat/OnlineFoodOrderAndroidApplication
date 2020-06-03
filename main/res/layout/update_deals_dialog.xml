@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/EditDealsrestaurantiD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/colorOrange"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/EditDealsCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    <EditText
+        android:id="@+id/EditDealsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    <EditText
+        android:id="@+id/EditDealsPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+
+    <Button
+        android:id="@+id/buttonUpdateDealsByID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLime"
+        android:text="Update " />
+
+    <Button
+        android:id="@+id/buttonDeleteDealsByID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorOrange"
+
+        android:text="Delete " />
+
+
+
+
+
+</LinearLayout>

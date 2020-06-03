@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUsers">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textViewR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="User Registeration Form "
+            android:textColor="@color/colorOrange"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/textViewR"
+
+            android:hint="Name"
+            android:ems="10"
+            android:id="@+id/editTextNameR"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/editTextNameR"
+
+            android:hint="Father Name"
+            android:ems="10"
+            android:id="@+id/editTextFNameR"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/editTextFNameR"
+
+
+            android:hint="UserID"
+            android:ems="10"
+            android:id="@+id/editTextIDR"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Enter Password"
+            android:ems="10"
+            android:id="@+id/editTextPwR"
+            android:layout_below="@+id/editTextIDR"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/editTextPwR"
+            android:hint="Area"
+
+            android:ems="10"
+            android:id="@+id/editTextAreaR"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/editTextAreaR"
+            android:hint="City"
+
+            android:ems="10"
+            android:id="@+id/editTextCityR"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/editTextCityR"
+            android:hint="Address"
+
+
+            android:ems="10"
+            android:id="@+id/editTextAddressR"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/editTextAddressR"
+            android:hint="Email"
+            android:ems="10"
+            android:id="@+id/editTextEmailR"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:layout_below="@+id/editTextEmailR"
+            android:hint="Mobile No"
+            android:ems="10"
+            android:id="@+id/editTextMobR"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextEmailR"
+
+
+            android:layout_weight="1"
+            android:background="@color/colorOrange"
+            android:text="Register"
+            android:textColor="@color/colorLime" />
+        <Button
+            android:text="Back"
+            android:layout_below="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonBackR"
+            android:background="@color/colorPurple"
+            android:textColor="@color/colorLime"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

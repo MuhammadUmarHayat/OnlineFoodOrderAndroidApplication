@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".CustomerOrderPlacementActivity">
+
+
+    <TextView
+        android:id="@+id/textViewOrderCustomerID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorOrange"
+
+        android:text="Customer ID"
+        android:textColor="@color/colorLime"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewCustomerDeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        android:layout_below="@+id/textViewOrderCustomerID"/>
+
+    <TextView
+        android:id="@+id/textViewOrderDealTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/imageViewCustomerDeal"
+        android:gravity="center"
+        android:text="Title"
+        android:textColor="@color/colorRed"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
+
+    <TextView
+        android:id="@+id/textViewOrderDealCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textViewOrderDealTitle"
+        android:gravity="center"
+        android:text="Category"
+        android:textColor="@color/colorPurple"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textViewOrderDealPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textViewOrderDealCategory"
+        android:gravity="center"
+        android:text="Price"
+        android:textColor="@color/colorLime"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EditTextDealQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter quantity in integer "
+        android:layout_below="@+id/textViewOrderDealPrice"
+        android:inputType="number">
+
+
+    </EditText>
+    <TextView
+        android:id="@+id/textViewOrderDealRestarantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/EditTextDealQuantity"
+        android:gravity="center"
+        android:text="R name"
+        android:textColor="@color/colorPurple"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewOrderDealRestarantID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textViewOrderDealRestarantName"
+        android:gravity="center"
+        android:text="RID"
+        android:textColor="@color/colorPurple"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EditTextDealMaxTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter Maximum time in minutes "
+        android:layout_below="@+id/textViewOrderDealRestarantID"
+        android:inputType="number">
+
+
+
+    </EditText>
+
+
+
+
+    <TextView
+        android:id="@+id/textViewOrderDealCountDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/EditTextDealMaxTime"
+        android:gravity="center"
+        android:text="counter"
+        android:textColor="@color/colorOrange"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewOrderDealBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textViewOrderDealCountDown"
+        android:gravity="center"
+        android:text="Bill"
+        android:textColor="@color/colorRed"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:layout_below="@+id/textViewOrderDealBill" android:layout_marginTop="50dp">
+
+
+
+        <Button android:id="@+id/buttonCustomerOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place Order"
+            android:layout_below="@+id/EditTextDealMaxTime"
+            android:background="@color/colorPurple"
+            android:textColor="@color/colorLime"
+            android:layout_marginLeft="60dp">
+
+
+        </Button>
+
+        <Button android:id="@+id/buttonCustomerCancelOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel  Order"
+
+            android:background="@color/colorRed"
+            android:textColor="@color/colorLime"
+            android:layout_marginLeft="60dp"
+            >
+
+
+        </Button>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textViewOrderDealNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textViewOrderDealBill"
+        android:gravity="center"
+        android:text="Payment on cash at the time of delivery.Plus 200 delivery charges in the local city."
+        android:textColor="@color/colorAccent"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminPannel">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOrange"
+        android:gravity="center"
+        android:text="Admin Pannel"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:id="@+id/buttonAdminAddRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Restaurants"
+        android:background="@color/colorPurple"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonAdminAddMenues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Add Deals" />
+    <Button
+        android:id="@+id/buttonAdminViewRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLime"
+
+        android:text="View  Restaurants" />
+
+    <Button
+        android:id="@+id/buttonAdminViewMenues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorlightPink"
+        android:text="View Deals" />
+
+    <Button
+        android:id="@+id/buttonAdminViewAllUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOrange2"
+        android:text="View All Customers" />
+
+    <Button
+        android:id="@+id/buttonAdminLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Logout" />
+
+</LinearLayout>

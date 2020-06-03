@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CustomerAllDealsActivity">
+
+
+    <TextView
+        android:id="@+id/textViewCustomerID1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOrange"
+        android:gravity="center"
+        android:text=" Customer ID"
+        android:textColor="@color/colorLime"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/CustomerSearch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textViewCustomerID1">
+
+        <EditText
+            android:id="@+id/EditTextSearch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Favourite Restaurant of   "
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:layout_marginRight="10dp">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/ButtonSearch1"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorLime"
+            android:padding="10dp"
+            android:text="Search"
+            android:textColor="@color/colorOrange">
+
+
+        </Button>
+
+        <Button
+            android:id="@+id/ButtonSearchRefresh1"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorlightPink"
+            android:padding="10dp"
+            android:text="R"
+            android:textColor="@color/colorRed">
+
+
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerSearch1">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/lvViewAllCustomerRestList1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

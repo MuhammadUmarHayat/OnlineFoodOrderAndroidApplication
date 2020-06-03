@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.onlinefoodappfinal27may2020">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CustomerOrderPlacementActivity"></activity>
+        <activity android:name=".CustomerAllDealsActivity" />
+        <activity android:name=".ViewDeals" />
+        <activity android:name=".ViewRestaurants" />
+        <activity android:name=".AddDealsActivity" />
+        <activity android:name=".AddRestaurantActivity" />
+        <activity android:name=".ViewUsers" />
+        <activity android:name=".CustomerActivity" />
+        <activity android:name=".AdminPannel" />
+        <activity android:name=".AddUsers" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
